@@ -1,7 +1,12 @@
 name: dispatch workflow
 on:
-  repository_dispatch:
-    types: [test]
+#   repository_dispatch:
+#     types: [test]
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        description: This is a version
 
 jobs:
   job1:
