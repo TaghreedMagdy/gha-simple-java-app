@@ -1,7 +1,7 @@
 name: dispatch workflow
 on:
   repository_dispatch:
-    types: [testing]
+    types: [test]
 
 jobs:
   job1:
