@@ -1,13 +1,13 @@
 name: cron workflow
 on:
-    schedule:
-        - cron: "0/5 * * * *"
+  schedule:
+  - cron: "0/5 * * * *"
 
 jobs:
-    try-scheduled:
-        name: run any command
-        runs-on: ubuntu-latest
-        steps:
-          - name: bash command
-            run: echo "Schedule"
-            shell: bash  
+  try-scheduled:
+    name: run any command
+    runs-on: ubuntu-latest
+    steps:
+      - name: bash command
+        run: echo "Schedule"
+        shell: bash  
