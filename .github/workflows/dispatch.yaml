@@ -1,11 +1,11 @@
-name: dipatch workflow
+name: dispatch workflow
 on:
-    repository_dispatch:
-        types: [testing]
+  repository_dispatch:
+    types: [testing]
 
 jobs:
-    job1:
-        name: dispatch trial
-        runs-on: ubuntu-latest
-        steps:
-            - run: echo "success :)"
+  job1:
+    name: dispatch trial
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "success :)"
