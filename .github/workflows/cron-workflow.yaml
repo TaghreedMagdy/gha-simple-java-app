@@ -1,7 +1,6 @@
 name: cron workflow
 on:
-  schedule:
-    - cron: "0/5 * * * *"
+  push
 
 jobs:
   try-scheduled:
